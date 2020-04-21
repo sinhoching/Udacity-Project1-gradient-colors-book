@@ -1,0 +1,148 @@
+/*For smaller screen devices*/
+.container{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 70px 70px 1070px;
+    grid-template-areas:
+    "lg"
+    "tt"
+    "nb"
+    "main"
+    "ft";
+}
+
+.box{
+    border: 2px solid salmon;
+    background: white;
+}
+
+.logo{
+    grid-area:lg;
+    padding: 10px;
+    text-align: center;
+}
+
+#logoImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;   
+}
+
+.title{
+    grid-area:tt;
+    padding: 2px;
+}
+
+#head{
+    color:#6D7191;
+    font-family: "Marquee Moon";
+    text-align: center;
+    font-size: 32px;
+    word-spacing: 10px;
+    line-height: 2;
+}
+
+.nav-bar{
+    grid-area:nb;
+    padding: 20px;
+    line-height: 1.5;
+    word-spacing: 45px;
+    text-align: center;
+}
+
+.link{
+    color:#6D7191;
+    text-decoration: overline;
+    font-family: "Advent Pro";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content{
+    display: grid;
+    justify-items: center;
+    grid-area:main;
+    background-color: #f894a4;
+    background-image: linear-gradient(315deg, #f894a4 0%, #f9d1b7 74%);
+}
+
+.nestedPost{
+    display:grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+    grid-gap: 40px;
+    padding: 40px;
+}
+
+.post{
+    border:6px solid white;
+    border-style: double;
+    display: flex;
+    text-decoration: none;
+}
+
+#postOne{
+    grid-area: one;
+}
+#postTwo{
+    grid-area: two;
+}
+#postThree{
+    grid-area: three;
+}
+#postFour{
+    grid-area: four;
+}
+
+.postImage{
+    height:100%;
+}
+
+.postTitle{
+    padding:10px;
+    color:ghostwhite;
+    font-family: "Advent Pro";
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer{
+    grid-area:ft;
+}
+
+/* 600px - 900px width Screen*/
+@media(min-width: 600px) and (max-width: 900px){
+    .container{
+        display:grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 300px 1fr 300px 600px;
+        grid-template-areas:
+        "lg lg lg lg lg lg lg lg"
+        "tt tt tt tt tt tt tt tt"
+        "nb nb nb nb nb nb nb nb"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}
+
+/* above 900px width Screen*/
+@media(min-width: 901px){
+    .container{
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 1fr 300px 600px;
+        grid-template-areas:
+        "lg lg lg lg lg lg lg lg"
+        "tt tt tt tt tt tt tt tt"
+        "nb nb nb nb nb nb nb nb"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}
