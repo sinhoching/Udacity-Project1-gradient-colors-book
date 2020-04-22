@@ -1,3 +1,7 @@
+body{
+    margin:0px;
+}
+
 /*For smaller screen devices*/
 .container{
     display:grid;
@@ -13,7 +17,7 @@
 }
 
 .box{
-    border: 2px solid salmon;
+    /*border: 2px solid salmon;*/
     background: white;
 }
 
