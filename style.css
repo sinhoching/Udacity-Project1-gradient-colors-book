@@ -7,7 +7,7 @@ body{
     display:grid;
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 70px 70px 820px;
+    grid-template-rows: 120px 70px 70px 1340px;
     grid-template-areas:
     "lg"
     "tt"
@@ -81,8 +81,8 @@ body{
     "two"
     "three"
     "four";
-    grid-gap: 40px;
-    padding: 40px;
+    grid-gap: 80px;
+    padding: 80px;
 }
 
 .post{
@@ -136,12 +136,12 @@ body{
     }
 }*/
 
-/* above 900px width Screen*/
-@media(min-width: 901px){
+/* above 1000px width Screen*/
+@media(min-width: 1001px){
     .container{
         display:grid;
         grid-template-columns: 100%;
-        grid-template-rows: 140px 100px 100px 800px;
+        grid-template-rows: 140px 100px 100px 1340px;
         grid-template-areas:
         "lg lg lg lg lg lg lg lg"
         "tt tt tt tt tt tt tt tt"

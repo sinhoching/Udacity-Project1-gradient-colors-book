@@ -11,40 +11,160 @@
     text-align: left;
 }
 
+p {
+    max-width: 800px;
+    font-family: "Advent Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: #6D7191;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .nestedGrid{
     display: grid;
     height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
     grid-template-areas:
-    "b1"
-    "b2";
+        "b1 b2"
+        "b3 b4"
+        "b5 b6"
+        "b7 b8";
     grid-gap: 20px;
+    justify-items: center;
 }
 
 .grid{
     height: 200px;
-    width: 200px;
+    width: 80%;
     border-radius: 18px;
     box-shadow: 3px 2px 2px grey;
+    display: flex;
+}
+
+.colorBox{
+    display: inline-block;
+    height: 180px;
+    width: 160px;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+.colorInfo{
+    padding: 20px;
+    font-family: "Advent Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: #6D7191;
+}
+
+.cssButton{
+    height: 24px;
+    width: 70px;
+    border: 1.4px solid #6D7191;
+    border-radius: 8px;
+    box-shadow: 2px 1px 1px #6D7191;
+    margin-top: 20px;
+    font-family: sans-serif;
 }
 
 #gridOne{
     grid-area: b1;
+    background-color: white;
+}
+
+#gradientRed01{
     background-color: #eb4511;
     background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
 }
+
 #gridTwo{
     grid-area: b2;
+    background-color: white;
+}
+
+#gradientRed02{
+    background-color: #f71735;
+    background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+}
+
+#gridThree{
+    grid-area: b3;
+    background-color: white;
+}
+
+#gradientRed03{
     background-color: #f5f5f1;
     background-image: linear-gradient(315deg, #f5f5f1 0%, #e50914 74%);
 }
 
+#gridFour{
+    grid-area: b4;
+    background-color: white;
+}
 
-/* above 900px width Screen*/
-@media(min-width: 901px){
+#gradientRed04{
+    background-color: #99201c;
+    background-image: linear-gradient(316deg, #99201c 0%, #a96f62 74%);
+}
+
+#gridFive{
+    grid-area: b5;
+    background-color: white;
+}
+
+#gradientRed05{
+    background-color: #e0455f;
+    background-image: linear-gradient(147deg, #e0455f 0%, #44000b 74%);
+}
+
+#gridSix{
+    grid-area: b6;
+    background-color: white;
+}
+
+#gradientRed06{
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+    
+}
+
+#gridSeven{
+    grid-area: b7;
+    background-color: white;
+}
+
+#gradientRed07{
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+}
+
+#gridEight{
+    grid-area: b8;
+    background-color: white;
+}
+
+#gradientRed08{
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+}
+
+/* above 1001px width Screen*/
+@media(min-width: 1001px){
     #pageTitle{
         font-size: 50px;
+    }
+
+    .nestedGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+            "b1 b2 b3"
+            "b4 b5 b6"
+            "b7 b8 .";
+        grid-gap: 40px;
+        padding-top: 40px;
     }
 
 }
