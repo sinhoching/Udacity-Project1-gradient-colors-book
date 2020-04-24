@@ -1,41 +1,36 @@
-.content{
+.content {
     display: unset;
     justify-items: unset;
     padding: 30px;
 }
 
-#pageTitle{
-    color:#6D7191;
-    font-family: "Marquee Moon";
+#pageTitle {
+    color: #6D7191;
+    font-family: "marquee_moonregular";
     font-size: 40px;
     text-align: left;
 }
 
 p {
     max-width: 800px;
-    font-family: "Advent Pro";
+    font-family: 'advent_proregular';
     font-size: 20px;
-    font-weight: 500;
     color: #6D7191;
     margin-left: auto;
     margin-right: auto;
 }
 
-.nestedGrid{
+.nestedGrid {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px;
-    grid-template-areas:
-        "b1 b2"
-        "b3 b4"
-        "b5 b6"
-        "b7 b8";
+    grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8";
     grid-gap: 20px;
     justify-items: center;
 }
 
-.grid{
+.grid {
     height: 200px;
     width: 80%;
     max-width: 400px;
@@ -45,7 +40,7 @@ p {
     display: flex;
 }
 
-.colorBox{
+.colorBox {
     display: inline-block;
     height: 180px;
     width: 160px;
@@ -53,15 +48,15 @@ p {
     margin: 10px;
 }
 
-.colorInfo{
+.colorInfo {
     padding: 20px;
-    font-family: "Advent Pro";
+    font-family: 'advent_proregular';
     font-size: 20px;
-    font-weight: 500;
     color: #6D7191;
+    white-space: nowrap;
 }
 
-.cssButton{
+.cssButton {
     height: 24px;
     width: 70px;
     border: 1.4px solid #6D7191;
@@ -71,53 +66,49 @@ p {
     font-family: sans-serif;
 }
 
-#gridOne{
+#gridOne {
     grid-area: b1;
 }
 
-#gridTwo{
+#gridTwo {
     grid-area: b2;
 }
 
-#gridThree{
+#gridThree {
     grid-area: b3;
 }
 
-#gridFour{
+#gridFour {
     grid-area: b4;
 }
 
-#gridFive{
+#gridFive {
     grid-area: b5;
 }
 
-#gridSix{
+#gridSix {
     grid-area: b6;
 }
 
-#gridSeven{
+#gridSeven {
     grid-area: b7;
 }
 
-#gridEight{
+#gridEight {
     grid-area: b8;
 }
 
 /* above 1001px width Screen*/
-@media(min-width: 1001px){
-    #pageTitle{
+
+@media(min-width: 1001px) {
+    #pageTitle {
         font-size: 50px;
     }
-
     .nestedGrid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 200px 200px 200px;
-        grid-template-areas:
-            "b1 b2 b3"
-            "b4 b5 b6"
-            "b7 b8 .";
+        grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 .";
         grid-gap: 40px;
         padding-top: 40px;
     }
-
 }

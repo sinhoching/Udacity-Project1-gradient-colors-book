@@ -1,124 +1,160 @@
-body{
-    margin:0px;
+body {
+    margin: 0px;
 }
 
 /*For smaller screen devices*/
-.container{
-    display:grid;
+
+.container {
+    display: grid;
     height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: 120px 70px 70px 1340px;
-    grid-template-areas:
-    "lg"
-    "tt"
-    "nb"
-    "main"
-    "ft";
+    grid-template-areas: "lg" "tt" "nb" "main" "ft";
 }
 
-.box{
+.box {
     /*border: 2px solid salmon;*/
     background: white;
 }
 
-.logo{
-    grid-area:lg;
+.logo {
+    grid-area: lg;
     padding: 8px;
     text-align: center;
 }
 
-#logoImage{
+#logoImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 100px;   
+    height: 100px;
 }
 
-.title{
-    grid-area:tt;
+.title {
+    grid-area: tt;
     padding: 2px;
 }
 
-#head{
-    color:#6D7191;
-    font-family: "Marquee Moon";
+#head {
+    color: #6D7191;
+    font-family: "marquee_moonregular";
     text-align: center;
     font-size: 32px;
     word-spacing: 10px;
     line-height: 2;
 }
 
-.nav-bar{
-    grid-area:nb;
+.nav-bar {
+    grid-area: nb;
     padding: 20px;
     line-height: 1.5;
     word-spacing: 45px;
     text-align: center;
 }
 
-.link{
-    color:#6D7191;
+.link {
+    color: #6D7191;
     text-decoration: overline;
-    font-family: "Advent Pro";
+    font-family: "advent_proregular";
     font-size: 20px;
-    font-weight: 500;
 }
 
-.content{
+.content {
     display: grid;
     justify-items: center;
-    grid-area:main;
+    grid-area: main;
     background-color: #f894a4;
     background-image: linear-gradient(315deg, #f894a4 0%, #f9d1b7 74%);
 }
 
-.nestedPost{
-    display:grid;
+.nestedPost {
+    display: grid;
     grid-template-columns: 400px;
     grid-template-rows: repeat(4, 150px);
-    grid-template-areas:
-    "one"
-    "two"
-    "three"
-    "four";
+    grid-template-areas: "one" "two" "three" "four";
     grid-gap: 80px;
     padding: 80px;
 }
 
-.post{
-    border:6px solid white;
+.post {
+    border: 6px solid white;
     border-style: double;
     display: flex;
     text-decoration: none;
 }
 
-#postOne{
+#postOne {
     grid-area: one;
 }
-#postTwo{
+
+#postTwo {
     grid-area: two;
 }
-#postThree{
+
+#postThree {
     grid-area: three;
 }
-#postFour{
+
+#postFour {
     grid-area: four;
 }
 
-.postImage{
-    height:100%;
+.postImage {
+    height: 100%;
 }
 
-.postTitle{
-    padding:10px;
-    color:ghostwhite;
-    font-family: "Advent Pro";
+.postTitle {
+    padding: 10px;
+    color: #6D7191;
+    font-family: 'advent_promedium';
     font-size: 30px;
-    font-weight: 500;
 }
 
-.footer{
-    grid-area:ft;
+.footer {
+    grid-area: ft;
+}
+
+.icon-bar {
+    font-size: 50px;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.icon-bar a:hover {
+    margin-top: 5px;
+    cursor: pointer;
+    color: #6D7191;
+    word-spacing: 5px;
+}
+
+.facebook {
+    background: white;
+    color: #3B5998;
+}
+
+.instagram {
+    color: #dc2743;
+    background: white;
+}
+
+.twitter {
+    background: white;
+    color: #55ACEE;
+}
+
+.google {
+    background: white;
+    color: #dd4b39;
+}
+
+.linkedin {
+    background: white;
+    color: #007bb5;
+}
+
+.youtube {
+    background: white;
+    color: #bb0000;
 }
 
 /* 600px - 900px width Screen
@@ -137,50 +173,36 @@ body{
 }*/
 
 /* above 1000px width Screen*/
-@media(min-width: 1001px){
-    .container{
-        display:grid;
+
+@media(min-width: 1001px) {
+    .container {
+        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 140px 100px 100px 1340px;
-        grid-template-areas:
-        "lg lg lg lg lg lg lg lg"
-        "tt tt tt tt tt tt tt tt"
-        "nb nb nb nb nb nb nb nb"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
+        grid-template-areas: "lg lg lg lg lg lg lg lg" "tt tt tt tt tt tt tt tt" "nb nb nb nb nb nb nb nb" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
-
-    #logoImage{
-        height: 120px;   
+    #logoImage {
+        height: 120px;
     }
-
-    .title{
+    .title {
         padding: none;
     }
-    
-    #head{
+    #head {
         font-size: 50px;
         word-spacing: 50px;
     }
-
-    .nav-bar{
+    .nav-bar {
         line-height: 2.2;
         word-spacing: 90px;
     }
-    
-    .link{
+    .link {
         font-size: 26px;
     }
-
-    .nestedPost{
+    .nestedPost {
         grid-template-columns: 400px 400px;
-        grid-template-rows:150px 150px;
-        grid-template-areas:
-        "one two"
-        "three four";
+        grid-template-rows: 150px 150px;
+        grid-template-areas: "one two" "three four";
         grid-gap: 50px;
         padding: 40px;
     }
-    
 }
-
