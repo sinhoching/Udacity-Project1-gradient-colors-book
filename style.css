@@ -6,7 +6,6 @@ body {
 
 .container {
     display: grid;
-    height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: 120px 70px 70px 1340px;
     grid-template-areas: "lg" "tt" "nb" "main" "ft";

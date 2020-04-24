@@ -22,7 +22,7 @@ p {
 
 .nestedGrid {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8";
@@ -64,6 +64,17 @@ p {
     box-shadow: 2px 1px 1px #6D7191;
     margin-top: 20px;
     font-family: sans-serif;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #6D7191;
+    box-shadow: 2px 1px 1px #6D7191;
+    transform: translateY(4px);
 }
 
 #gridOne {
@@ -110,5 +121,6 @@ p {
         grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 .";
         grid-gap: 40px;
         padding-top: 40px;
+        height: auto;
     }
 }
