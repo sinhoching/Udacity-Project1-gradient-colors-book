@@ -7,7 +7,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 70px 70px 1340px;
+    grid-template-rows: 120px 70px 70px auto;
     grid-template-areas: "lg" "tt" "nb" "main" "ft";
 }
 
@@ -64,6 +64,7 @@ body {
     grid-area: main;
     background-color: #f894a4;
     background-image: linear-gradient(315deg, #f894a4 0%, #f9d1b7 74%);
+    padding: 100px;
 }
 
 .nested-post {
@@ -177,7 +178,7 @@ body {
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 140px 100px 100px 1340px;
+        grid-template-rows: 140px 100px 100px auto;
         grid-template-areas: "lg lg lg lg lg lg lg lg" "tt tt tt tt tt tt tt tt" "nb nb nb nb nb nb nb nb" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
     #logo-image {
