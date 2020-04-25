@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 
-#logoImage {
+#logo-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +66,7 @@ body {
     background-image: linear-gradient(315deg, #f894a4 0%, #f9d1b7 74%);
 }
 
-.nestedPost {
+.nested-post {
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: repeat(4, 150px);
@@ -82,27 +82,27 @@ body {
     text-decoration: none;
 }
 
-#postOne {
+#post-one {
     grid-area: one;
 }
 
-#postTwo {
+#post-two {
     grid-area: two;
 }
 
-#postThree {
+#post-three {
     grid-area: three;
 }
 
-#postFour {
+#post-four {
     grid-area: four;
 }
 
-.postImage {
+.post-image {
     height: 100%;
 }
 
-.postTitle {
+.post-title {
     padding: 10px;
     color: #6D7191;
     font-family: 'advent_promedium';
@@ -180,7 +180,7 @@ body {
         grid-template-rows: 140px 100px 100px 1340px;
         grid-template-areas: "lg lg lg lg lg lg lg lg" "tt tt tt tt tt tt tt tt" "nb nb nb nb nb nb nb nb" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
-    #logoImage {
+    #logo-image {
         height: 120px;
     }
     .title {
@@ -197,7 +197,7 @@ body {
     .link {
         font-size: 26px;
     }
-    .nestedPost {
+    .nested-post {
         grid-template-columns: 400px 400px;
         grid-template-rows: 150px 150px;
         grid-template-areas: "one two" "three four";
