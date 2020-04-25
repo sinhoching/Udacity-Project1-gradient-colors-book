@@ -7,7 +7,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 70px 70px 1340px;
+    grid-template-rows: 120px 70px 70px 1040px;
     grid-template-areas: "lg" "tt" "nb" "main" "ft";
 }
 
@@ -177,7 +177,7 @@ body {
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 140px 100px 100px 1340px;
+        grid-template-rows: 140px 100px 100px 740px;
         grid-template-areas: "lg lg lg lg lg lg lg lg" "tt tt tt tt tt tt tt tt" "nb nb nb nb nb nb nb nb" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
     }
     #logo-image {
