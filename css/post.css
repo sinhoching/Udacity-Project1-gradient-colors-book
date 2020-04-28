@@ -1,6 +1,5 @@
 @import 'Advent-Pro.css';
 @import 'Marquee-Moon.css';
-
 .content {
     display: unset;
     justify-items: unset;
@@ -12,6 +11,18 @@
     font-family: "marquee_moonregular";
     font-size: 40px;
     text-align: left;
+}
+
+blockquote {
+    font-family: "advent_probold";
+    font-size: 20px;
+    color: white;
+}
+
+blockquote p {
+    padding: 20px;
+    background: #6D7191;
+    border-radius: 5px;
 }
 
 .color-description {

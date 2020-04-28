@@ -1,6 +1,5 @@
 @import 'Advent-Pro.css';
 @import 'Marquee-Moon.css';
-
 /*For smaller screen devices*/
 
 .container {
@@ -79,7 +78,7 @@
     border-style: double;
     display: flex;
     text-decoration: none;
-    display:flex;
+    display: flex;
 }
 
 #post-one {

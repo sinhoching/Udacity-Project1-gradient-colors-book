@@ -1,20 +1,25 @@
 @import 'style.css';
-
-.content{
+.content {
     display: block;
     justify-items: left;
 }
-.about-site{
- padding: 10px;
- color: #6D7191;
- font-family: 'advent_promedium';
- font-size: 30px;
+
+.about-site {
+    padding: 10px;
+    color: #6D7191;
+    font-family: 'advent_promedium';
+    font-size: 30px;
 }
 
-.about-header{
+.about-header {
     text-align: left;
 }
 
-#learn{
+#learn {
     font-size: 32px;
+}
+
+#greet {
+    font-size: 28px;
+    color: rgb(167, 20, 181);
 }
