@@ -1,0 +1,20 @@
+@import 'style.css';
+
+.content{
+    display: block;
+    justify-items: left;
+}
+.about-site{
+ padding: 10px;
+ color: #6D7191;
+ font-family: 'advent_promedium';
+ font-size: 30px;
+}
+
+.about-header{
+    text-align: left;
+}
+
+#learn{
+    font-size: 32px;
+}

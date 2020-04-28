@@ -1,0 +1,134 @@
+@import 'Advent-Pro.css';
+@import 'Marquee-Moon.css';
+
+.content {
+    display: unset;
+    justify-items: unset;
+    padding: 100px;
+}
+
+#page-title {
+    color: #6D7191;
+    font-family: "marquee_moonregular";
+    font-size: 40px;
+    text-align: left;
+}
+
+.color-description {
+    max-width: 800px;
+    font-family: 'advent_proregular';
+    font-size: 20px;
+    color: #6D7191;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+}
+
+.nested-grid {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8";
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.grid {
+    height: 200px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 3px 2px 2px grey;
+    display: flex;
+}
+
+.color-box {
+    display: inline-block;
+    height: 180px;
+    width: 160px;
+    border-radius: 18px;
+    margin: 10px;
+}
+
+.color-info {
+    padding: 20px;
+    font-family: 'advent_proregular';
+    font-size: 20px;
+    color: #6D7191;
+    white-space: nowrap;
+}
+
+.css-button {
+    height: 24px;
+    width: 70px;
+    border: 1.4px solid #6D7191;
+    border-radius: 8px;
+    box-shadow: 2px 1px 1px #6D7191;
+    margin-top: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #6D7191;
+    box-shadow: 2px 1px 1px #6D7191;
+    transform: translateY(4px);
+}
+
+#grid-one {
+    grid-area: b1;
+}
+
+#grid-two {
+    grid-area: b2;
+}
+
+#grid-three {
+    grid-area: b3;
+}
+
+#grid-four {
+    grid-area: b4;
+}
+
+#grid-five {
+    grid-area: b5;
+}
+
+#grid-six {
+    grid-area: b6;
+}
+
+#grid-seven {
+    grid-area: b7;
+}
+
+#grid-eight {
+    grid-area: b8;
+}
+
+#copyright {
+    display: inline-block;
+}
+
+/* above 1001px width Screen*/
+
+@media(min-width: 1001px) {
+    #page-title {
+        font-size: 50px;
+    }
+    .nested-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 .";
+        grid-gap: 40px;
+        padding-top: 40px;
+        height: auto;
+    }
+}
