@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Blog - Gradient Colors Book</title>
-    <meta name="descrip tion" content="colorPlayground" />
-    <link rel="stylesheet" href="Advent-Pro.css">
-    <link rel="stylesheet" href="Marquee-Moon.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="colorPlayground" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
@@ -23,35 +22,44 @@
         <div class="title box">
             <div id="head">Gradient Colors Book</div>
         </div>
-        <div class="nav-bar box">
+        <nav class="nav-bar box">
             <a class="link" href="index.html">HOME</a>
             <a class="link" href="red.html">Red</a>
             <a class="link" href="blue.html">Blue</a>
             <a class="link" href="yellow.html">Yellow</a>
             <a class="link" href="green.html">Green</a>
-        </div>
+            <a class="link" href="about.html">About</a>
+        </nav>
         <div class="content box">
             <div class="nested-post">
                 <a id="post-one" class="post" href="red.html">
-                    <img class="post-image" src="images/red.jpg" alt="Red Gradient" />
-                    <div class="post-title">Red <br>Gradients</div>
+                    <figure class="post-info">
+                        <img class="post-image" src="images/red.jpg" alt="Red Gradient" />
+                        <figcaption class="post-title">Red <br>Gradient</figcaption>
+                    </figure>
                 </a>
                 <a id="post-two" class="post" href="blue.html">
-                    <img class="post-image" src="images/blue.jpg" alt="Blue Gradient" />
-                    <div class="post-title">Blue <br>Gradients</div>
+                    <figure class="post-info">
+                        <img class="post-image" src="images/blue.jpg" alt="Blue Gradient" />
+                        <figcaption class="post-title">Blue <br>Gradient</figcaption>
+                    </figure>
                 </a>
                 <a id="post-three" class="post" href="yellow.html">
-                    <img class="post-image" src="images/yellow.jpg" alt="Yellow Gradient" />
-                    <div class="post-title">Yellow <br>Gradients</div>
+                    <figure class="post-info">
+                        <img class="post-image" src="images/yellow.jpg" alt="Yellow Gradient" />
+                        <figcaption class="post-title">Yellow <br>Gradient</figcaption>
+                    </figure>
                 </a>
-                <a id="post-four" class="post" href="blue.html">
-                    <img class="post-image" src="images/green.jpg" alt="Green Gradient" />
-                    <div class="post-title">Green <br>Gradients</div>
+                <a id="post-four" class="post" href="green.html">
+                    <figure class="post-info">
+                        <img class="post-image" src="images/green.jpg" alt="Green Gradient" />
+                        <figcaption class="post-title">Green <br>Gradient</figcaption>
+                    </figure>
                 </a>
             </div>
         </div>
         <footer class="footer box">
-            <div style="display: inline-block;">© Copyright 2020 <br>Sin Ho Ching</div>
+            <div id="copyright">© Copyright 2020 <br>Sin Ho Ching<br>Contact: sinhochingvictoria@gmail.com</div>
             <!-- The social media icon bar -->
             <div class="icon-bar">
                 <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-square"></i></a>
